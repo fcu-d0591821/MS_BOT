@@ -18,5 +18,5 @@ python main.py
 - player.png: 角色的圖片
 
 ## 參考
-- [Simulate Python keypresses for controlling a game] (https://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game)
-- [mdavey/globalhotkeys.py] (https://gist.github.com/mdavey/6d40a89dbc15aefcc8cd)
+- [Simulate Python keypresses for controlling a game](https://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game)
+- [mdavey/globalhotkeys.py](https://gist.github.com/mdavey/6d40a89dbc15aefcc8cd)
