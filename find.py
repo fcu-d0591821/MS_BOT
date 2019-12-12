@@ -1,4 +1,4 @@
-import cv2, time
+import cv2
 import numpy as np
 
 def findMob(image, target):

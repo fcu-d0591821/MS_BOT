@@ -1,6 +1,4 @@
 import threading
-import numpy as np
-import pyautogui
 import cv2
 import time
 from find import findMob, findPlayer
