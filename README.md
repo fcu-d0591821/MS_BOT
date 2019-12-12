@@ -5,7 +5,7 @@
 - 然後還打不太到
 
 ## 使用
-- ```
+```
 python -m venv venv
 \script\active
 pip install -r requirement.txt
