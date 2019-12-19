@@ -1,10 +1,11 @@
 import random
 import cv2
 import pyautogui
+import win32gui
 import numpy as np
 
-def screenshot():
-    return cv2.cvtColor(np.array(pyautogui.screenshot()), cv2.COLOR_RGB2GRAY)
+def screenshot(lx, ly, rx, ry):
+    return cv2.cvtColor(np.array(pyautogui.screenshot(region=(lx, ly, rx - lx, ry - ly))), cv2.COLOR_RGB2BGR)
 
 def findClosest(node, nodes):
     px, py = node
@@ -13,3 +14,14 @@ def findClosest(node, nodes):
 
 def randomTime(min, max, decimal):
     return random.randrange(min, max) / (10 ** decimal)
+
+def getGamePos():
+    result = []
+
+    def callback(hwnd, extra):
+        if win32gui.GetWindowText(hwnd) == "MapleStory":
+            result.append(win32gui.GetWindowRect(hwnd))
+            
+    win32gui.EnumWindows(callback, None)
+
+    return result[0]

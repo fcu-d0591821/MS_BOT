@@ -6,8 +6,8 @@
 
 ## 使用
 ```
-python -m venv venv
-script\active
+python -m venv .
+.\Script\active
 pip install -r requirement.txt
 python main.py
 ```
